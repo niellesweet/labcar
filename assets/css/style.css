@@ -22,7 +22,7 @@
 .navbar-default .links-menu{
 	margin-top: 15px;
 }
-/*PRIMERA SECCION*/
+/*DISEÑO PRIMERA SECCION*/
 .first-section{
 	background-image: url(../../img/taxi.jpg);
 	background-position: center bottom;
@@ -40,7 +40,8 @@
 	font-weight: 700;
 	margin: 35px 0 15px 25px;
 }
-.first-section .caja-texto h2{
+.first-section .caja-texto h2,
+.first-section .caja-texto .input1{
 	margin-left: 25px;
 }
 .first-section .caja-texto h2 i{
@@ -48,20 +49,18 @@
 	font-weight: 700;
 	margin-right: 4px;
 }
-.first-section .caja-texto h4{
+.first-section .caja-texto a{
+	color: white;
 	margin-left: 25px;
 	margin-top: 20px;
 }
 .first-section .caja-texto input{
+	background-color: transparent;
+	border-bottom:1px solid white;
+	border: none;
+	display:block;
 	padding: 5px;
 	width: 100%;
-	display:block;
-	border: none;
-	border-bottom:1px solid white;
-	background-color: transparent;
-}
-.first-section .caja-texto .input1{
-	margin-left: 25px;
 }
 .first-section .caja-texto p{
 	font-size: 16px;
@@ -76,4 +75,21 @@
 	margin-left: 25px;
 	margin-top: 25px;
 	padding: 10px 15px;
+}
+/*DISEÑO SEGUNDA SECCION*/
+.second-section{
+	background-color: #f7b617;
+	min-height: 80vh;
+	color: white;
+}
+.second-section .caja-texto{
+	border: 1px solid white;
+	height: 70vh;
+	margin-top: 5vh;
+}
+.second-section .caja-texto .imagen-celular{
+	margin: 40px 60px 40px 70px;
+}
+.second-section .caja-texto .texto-descarga{
+	margin-top: 40px;
 }
