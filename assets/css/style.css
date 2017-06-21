@@ -40,8 +40,7 @@
 	font-weight: 700;
 	margin: 35px 0 15px 25px;
 }
-.first-section .caja-texto h2,
-.first-section .caja-texto .input1{
+.first-section .caja-texto h2{
 	margin-left: 25px;
 }
 .first-section .caja-texto h2 i{
@@ -53,14 +52,25 @@
 	color: white;
 	margin-left: 25px;
 	margin-top: 20px;
+	cursor: pointer;
+	transition: .5s all ease; 
+}
+.first-section .caja-texto a:hover{
+	color: black;
+	cursor: pointer;
+	transition: .5s all ease; 
+	text-decoration: none;
 }
 .first-section .caja-texto input{
 	background-color: transparent;
-	border-bottom:1px solid white;
 	border: none;
+	border-bottom:1px solid white;
 	display:block;
 	padding: 5px;
 	width: 100%;
+}
+.first-section .caja-texto .input1{
+	margin-left: 25px
 }
 .first-section .caja-texto p{
 	font-size: 16px;
@@ -75,12 +85,18 @@
 	margin-left: 25px;
 	margin-top: 25px;
 	padding: 10px 15px;
+	cursor: pointer;
+	transition: .5s all ease; 
+}
+.first-section .caja-texto button:hover{
+	color: #f7b617;
+	transition: .5s all ease;
 }
 /*DISEÑO SEGUNDA SECCION*/
 .second-section{
 	background-color: #f7b617;
-	min-height: 80vh;
 	color: white;
+	min-height: 80vh;
 }
 .second-section .caja-texto{
 	border: 1px solid white;
@@ -92,4 +108,41 @@
 }
 .second-section .caja-texto .texto-descarga{
 	margin-top: 40px;
+}
+/*DISEÑO TERCERA SECCION*/
+.third-section{
+	background-image: url(../../img/conduce.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 60vh;
+}
+.third-section .caja-texto{
+	background-color: rgba(0, 0, 0, 0.25);
+	height: 60vh;
+	color: white;
+}
+.third-section .caja-texto h2{
+	margin: 80px 25px 0 30px;
+}
+.third-section .caja-texto h4{
+	margin-left: 30px;
+}
+.third-section .caja-texto button{
+	background-color: #f7b617;
+	border-radius: 8px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 700;
+	margin-left: 30px;
+	margin-top: 30px;
+	padding: 10px 15px;
+	transition: .5s all ease; 
+}
+.third-section .caja-texto button:hover{
+	background-color: white;
+	color: black;
+	transition: .5s all ease;
 }
