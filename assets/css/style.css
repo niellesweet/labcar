@@ -1,3 +1,28 @@
 *{
-	
+	font-family: 'Overpass', sans-serif;
+}
+/*NAVBAR*/
+.navbar-default{
+	background-color: white;
+	border: none;
+}
+.navbar-default span.icon-bar{
+	color: black;
+}
+.navbar-default .navbar-nav li a{
+	color: black;
+	transition: .5s all ease;
+	font-size: 16px;
+	padding: 40px 25px;
+}
+.navbar-default .navbar-nav li a:hover{
+	color: #83B271;
+	font-style: italic;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s all ease
+	text-shadow: 2px 2px #ff0000;
+}
+.navbar-default .links-menu{
+	margin-top: 15px;
 }
