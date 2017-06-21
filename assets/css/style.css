@@ -26,3 +26,37 @@
 .navbar-default .links-menu{
 	margin-top: 15px;
 }
+/*PRIMERA SECCION*/
+.first-section{
+	background-image: url(../../img/taxi.jpg);
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+.first-section .caja-texto{
+	color: white;
+	background-color: #f7b617;
+	height: 350px;
+	margin-top: 170px;
+}
+.first-section .caja-texto h1{
+	margin: 35px 0 15px 25px;
+	font-weight: 700;
+}
+.first-section .caja-texto h2{
+	margin-left: 25px;
+}
+.first-section .caja-texto h4{
+	margin-left: 25px;
+	margin-top: 20px;
+}
+.first-section .caja-texto .input1{
+	margin-left: 25px;
+}
+
+.first-section .caja-texto button{
+	margin-top: 25px;
+	margin-left: 25px;
+	padding: 10px;
+}
