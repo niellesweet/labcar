@@ -1,6 +1,7 @@
 *{
 	font-family: 'Overpass', sans-serif;
 }
+.container-fluid
 /*NAVBAR*/
 .navbar-default{
 	background-color: white;
@@ -109,6 +110,19 @@
 .second-section .caja-texto .texto-descarga{
 	margin-top: 40px;
 }
+.second-section .para-movil{
+	height: 100vh;
+}
+.second-section .caja-imagen{
+	border: 1px solid white;
+	margin-top: 60px;
+	padding: 25px;
+}
+.second-section .caja-imagen .celular-movil{
+	margin-left: 50px;
+	padding-top: 20px;
+}
+
 /*DISEÑO TERCERA SECCION*/
 .third-section{
 	background-image: url(../../img/conduce.jpg);
@@ -146,3 +160,4 @@
 	color: black;
 	transition: .5s all ease;
 }
+/*DISEÑO CUARTA SECCION*/
