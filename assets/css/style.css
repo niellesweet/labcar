@@ -122,7 +122,6 @@
 	margin-left: 50px;
 	padding-top: 20px;
 }
-
 /*DISEÑO TERCERA SECCION*/
 .third-section{
 	background-image: url(../../img/conduce.jpg);
@@ -142,7 +141,7 @@
 .third-section .caja-texto h4{
 	margin-left: 30px;
 }
-.third-section .caja-texto button{
+.third-section .caja-texto .btn-default{
 	background-color: #f7b617;
 	border-radius: 8px;
 	border: none;
@@ -155,9 +154,29 @@
 	padding: 10px 15px;
 	transition: .5s all ease; 
 }
-.third-section .caja-texto button:hover{
+.third-section .caja-texto .btn-default:hover{
 	background-color: white;
 	color: black;
 	transition: .5s all ease;
 }
 /*DISEÑO CUARTA SECCION*/
+/*FOOTER*/
+.ending{
+	background-color: #2b2b2b;
+	width: 100%;
+	color: white;
+}
+.ending .list-unstyled li{
+	line-height: 3em; 
+}
+.ending .list-unstyled li a{
+	color: white;
+	text-decoration: none; 
+}
+.ending .logos-ag .logo-apple{
+	height: 3em;
+	margin-top: 90%
+}
+.ending .logos-ag .logo-google{
+	height: 3em;
+}
