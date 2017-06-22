@@ -1,7 +1,6 @@
 *{
 	font-family: 'Overpass', sans-serif;
 }
-.container-fluid
 /*NAVBAR*/
 .navbar-default{
 	background-color: white;
@@ -163,15 +162,23 @@
 /*FOOTER*/
 .ending{
 	background-color: #2b2b2b;
-	width: 100%;
 	color: white;
+	width: 100%;
 }
 .ending .list-unstyled li{
 	line-height: 3em; 
 }
 .ending .list-unstyled li a{
 	color: white;
-	text-decoration: none; 
+	cursor: pointer;
+	text-decoration: none;
+	transition: .5s all ease; 
+}
+.ending .list-unstyled li a:hover{
+	color: #f7b617;
+	cursor: pointer;
+	text-decoration: none;
+	transition: .5s all ease; 
 }
 .ending .logos-ag .logo-apple{
 	height: 3em;
