@@ -122,6 +122,34 @@
 		</div>
 	</section>
 	<!--CUARTA SECCION-->
+	<section class="fourth-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left caja-texto">
+					<h1>Tarifas</h1>
+					<h3>Consulta las tarifas LabCar aquí</h3>
+					<div class="input-group">
+      					<span class="input-group-btn">
+        				<button class="btn btn-default logo-imperio" type="button">
+						<i class="fa fa-rebel" aria-hidden="true"></i></button>
+      					</span>
+      					<input type="text" class="form-control input1" id="origen" placeholder="Ingrese su punto de partida">
+					</div>
+					<div class="input-group">
+      					<span class="input-group-btn">
+        				<button class="btn btn-default avion-papel" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+      					</span>
+      					<input type="text" class="form-control input2" id="destino" placeholder="Ingrese su destino">
+      				</div>
+      				<div class="boton-ruta">
+					<button type="button" class="btn btn-default" id="ruta">¡TRAZAR RUTA!</button>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 hidden-sm hidden-xs" id="map">
+				</div>	
+			</div>
+		</div>
+	</section>
 	<!--FOOTER-->
 	<footer class="ending">
 		<div class="container-fluid">
@@ -187,7 +215,10 @@
 			</div>
 		</div>
 	</footer>
-
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnkIGqQkkEPV8Io2gDKMRNzzzBTiz5Fqs&libraries=places&callback=initMap"
+        async defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
