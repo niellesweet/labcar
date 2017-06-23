@@ -11,28 +11,30 @@
 </head>
 <body>
 	<!--NAVBAR-->
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-left">
-					<li><a href="#Lab"><img src="img/logo.png" class="img-responsive logo-menu" alt=""></a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right links-menu">
-					<li><a href="#viaja">Viaja</a></li>
-					<li><a href="#Conduce">Conduce</a></li>
-					<li><a href="#inicia-sesion">Inicia Sesión</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<nav class="navbar navbar-top" id="menu">
+      	<div class="container-fluid">
+        	<div class="navbar-header" id="menu-p">
+          		<div class="menu-a">
+            		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+             		<span class="sr-only-left"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" style="font-size: 23px"></span></span>
+              		<span class="icon-bar"></span>
+              		<span class="icon-bar"></span>
+              		<span class="icon-bar"></span>   
+              		</button>
+          		</div>
+          		<div class="menu-b">
+            		<span class="visible-xs-sm-md-lg navbar-brand"><img src="img/logo.png" class="img-responsive"></span>
+          		</div>
+        	</div>
+        	<div class="navbar-collapse collapse sidebar-navbar-collapse">
+          		<ul class="nav navbar-nav navbar-right">
+            		<li class="active"><a href="#">Viaja</a></li>
+            		<li><a href="#">Conduce</a></li>             
+            		<li><a href="#">Inicia sesión</a></li>  
+            	</ul>
+        	</div>
+      	</div>
+    </nav>
 	<!--PRIMERA SECCION-->
 	<section class="first-section">
 		<div class="container-fluid">
@@ -89,7 +91,7 @@
 			<div class="row">
 				<div class="hidden-lg hidden-md hidden-sm col-xs-12 para-movil">
 					<div class="row">
-						<div class="col-xs-10 col-xs-offset-1 caja-imagen">
+						<div class="col-xs-10 col-xs-offset-1  caja-imagen" align="center">
 							<div class="row text-center">
 								<div class="col-xs-12 text-center">
 									<h1>La nueva app</h1>
@@ -125,7 +127,7 @@
 	<section class="fourth-section">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left caja-texto">
+				<div class="col-lg-6 col-md-6 col-sm-12 hidden-xs text-left caja-texto">
 					<h1>Tarifas</h1>
 					<h3>Consulta las tarifas LabCar aquí</h3>
 					<div class="input-group">
@@ -147,6 +149,26 @@
 				</div>
 				<div class="col-lg-6 col-md-6 hidden-sm hidden-xs" id="map">
 				</div>	
+				<div class="hidden-lg hidden-md col-sm-12 col-xs-12 text-left caja-texto-movil">
+					<h1>Tarifas</h1>
+					<h3>Consulta las tarifas LabCar aquí</h3>
+					<div class="input-group">
+      					<span class="input-group-btn">
+        				<button class="btn btn-default logo-imperio" type="button">
+						<i class="fa fa-rebel" aria-hidden="true"></i></button>
+      					</span>
+      					<input type="text" class="form-control input1" id="origen" placeholder="Ingrese su punto de partida">
+					</div>
+					<div class="input-group">
+      					<span class="input-group-btn">
+        				<button class="btn btn-default avion-papel" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+      					</span>
+      					<input type="text" class="form-control input2" id="destino" placeholder="Ingrese su destino">
+      				</div>
+      				<div class="boton-ruta">
+					<button type="button" class="btn btn-default" id="ruta">¡TRAZAR RUTA!</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -158,7 +180,7 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 text-left titulo-footer">
 							<h1>Lab<i class="fa fa-angle-left" aria-hidden="true"></i>ar</h1>
-							<hr>						
+							<hr>				
 						</div>
 					</div>
 					<div class="row">
@@ -198,7 +220,7 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 text-left logos-footer">
 							<h4><i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-linkedin" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-play" aria-hidden="true"></i></h4>
-							<hr>						
+							<hr>			
 						</div>
 					</div>
 					<div class="row">
@@ -212,6 +234,53 @@
 						</div>
 					</div>
 				</div>	
+	<!--movil-->			
+				<div class="hidden-lg hidden-md hidden-sm col-xs-12 para-movil">
+					<div class="row">
+						<div class="col-xs-12 text-left titulo-movil">
+							<h1>Lab<i class="fa fa-angle-left" aria-hidden="true"></i>ar</h1>
+							<hr>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 text-center caja-texto">
+							<div class="col-xs-6 links">
+								<ul class="list-unstyled">
+									<li><a href="#">Viaja</a></li>
+									<li><a href="#">Conduce</a></li>
+									<li><a href="#">Ciudades</a></li>
+									<li><a href="#">Tarifas</a></li>
+									<li><a href="#">Entregas</a></li>
+									<li><a href="#">Cómo funciona?</a></li>
+									<li><a href="#">Países</a></li>
+									<li><a href="#">Seguridad</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-6 text-center caja-texto">
+								<h4><i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-linkedin" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-play" aria-hidden="true"></i></h4><br>
+								<ul class="list-unstyled">
+									<li><a href="#"><img src="img/app-store.png" class="img-responsive logo-apple" alt=""></a></li>
+									<br><li><a href="#"><img src="img/google-play.png" class="img-responsive logo-google" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 text-center ending-footer">
+							<hr>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 text-center ending-footer">
+							<p>© 2017 LabCar technologies Inc.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 text-center ending-footer">
+							<p>Made with <i class="fa fa-heartbeat" aria-hidden="true"></i> by Dani S. Kis</p>
+							</div>
+						</div>
+					</div>	
+				</div>
 			</div>
 		</div>
 	</footer>

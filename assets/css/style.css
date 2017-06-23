@@ -2,25 +2,26 @@
 	font-family: 'Overpass', sans-serif;
 }
 /*NAVBAR*/
-.navbar-default{
-	background-color: white;
-	border: none;
+#menu{
+    padding: 5px 60px;
+    background-color: white;    
 }
-.navbar-default .navbar-nav li a{
-	color: black;
-	font-size: 16px;
-	padding: 40px 25px;
-	transition: .5s all ease;
+@media (max-width: 700px){
+    #menu-p{
+        display: inline-flex;
+        flex-direction: row;
+    }
 }
-.navbar-default .navbar-nav li a:hover{
-	color: #f7b617;
-	cursor: pointer;
-	font-weight: bold;
-	transition: .5s all ease;
-	overflow: hidden;
+#menu ul li a{
+    color: black;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
-.navbar-default .links-menu{
-	margin-top: 15px;
+@media (max-width: 800px;){
+    .navbar-header{
+        flex-direction: row-reverse;
+    }
 }
 /*DISEÑO PRIMERA SECCION*/
 .first-section{
@@ -110,15 +111,16 @@
 	margin-top: 40px;
 }
 .second-section .para-movil{
-	height: 100vh;
+	min-height: 100vh;
 }
 .second-section .caja-imagen{
 	border: 1px solid white;
 	margin-top: 60px;
 	padding: 25px;
+
 }
 .second-section .caja-imagen .celular-movil{
-	margin-left: 50px;
+	margin-left: 10px;
 	padding-top: 20px;
 }
 /*DISEÑO TERCERA SECCION*/
@@ -207,6 +209,47 @@
 	padding: 10px 15px;
 	transition: .5s all ease;
 }
+/*movil*/
+.fourth-section .caja-texto-movil .input-group .input1{
+	background-color: transparent;
+	border-radius: 8px;
+	border: 1px solid white;
+	color: white;
+	margin-bottom: 25px; 
+	margin-top: 15px;
+	width: 100%;
+}
+.fourth-section .caja-texto-movil .input-group span .logo-imperio{
+	background-color: transparent;
+	border: none;
+	color: white;
+	margin-bottom: 25px;
+}
+.fourth-section .caja-texto-movil .input-group .input2{
+	border: 1px solid white;
+	border-radius: 8px;
+	background-color: transparent;
+	color: white;
+	margin-bottom: 25px; 
+}
+.fourth-section .caja-texto-movil .input-group span .avion-papel{
+	border: none;
+	background-color: transparent;
+	color: white;
+	margin-bottom: 25px;
+}
+.fourth-section .caja-texto-movil .boton-ruta .btn-default{
+	background-color: white;
+	border-radius: 8px;
+	border: none;
+	color: black;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 700;
+	margin-left: 100px;
+	padding: 10px 15px;
+	transition: .5s all ease;
+}	
 .form-control::-webkit-input-placeholder {
     color: white;
 }
